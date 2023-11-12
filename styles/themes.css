@@ -10,6 +10,17 @@
     --card__header-weight: 400;
     --background-color: #fff;
     --accent-color: #000;
+    --background-image:
+        repeating-linear-gradient(
+            to right,
+            #d3d3d3 0 2px,
+            transparent 2px 4px
+        ),
+        repeating-linear-gradient(
+            #d3d3d3 0 2px,
+            transparent 2px 4px
+        ),
+        linear-gradient(#e7e7e7 0.01%, #1a1a1a);
 }
 
 :root.theme-dark {
@@ -17,4 +28,15 @@
     --card__header-weight: 465;
     --background-color: #000;
     --accent-color: #00CC14;
+    --background-image:
+        repeating-linear-gradient(
+            to right,
+            #000 0 2px,
+            transparent 2px 4px
+        ),
+        repeating-linear-gradient(
+            #000 0 2px,
+            transparent 2px 4px
+        ),
+        linear-gradient(#007f0c, #004306);
 }

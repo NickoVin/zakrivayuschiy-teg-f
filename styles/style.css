@@ -21,4 +21,7 @@
   font-variation-settings: 'wght' var(--card__text-weight);
   background-color: var(--background-color);
   color: var(--accent-color);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
 }
