@@ -17,4 +17,6 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-fonts);
+  font-variation-settings: 'wght' var(--card__text-weight);
 }
