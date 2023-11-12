@@ -19,4 +19,6 @@
   min-block-size: 100dvb;
   font-family: var(--main-fonts);
   font-variation-settings: 'wght' var(--card__text-weight);
+  background-color: var(--background-color);
+  color: var(--accent-color);
 }
