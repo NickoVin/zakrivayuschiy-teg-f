@@ -25,3 +25,141 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+.header, main {
+  inline-size: var(--content-inline-size);
+  margin: 0 auto;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content min-content;
+  justify-content: center;
+  font-family: var(--accent-fonts);
+  text-transform: uppercase;
+  margin-block-start: 100px;
+  margin-block-end: 100px;
+  min-height: 327px;
+  padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  border: 2px solid #000;
+  background-color: var(--background-color);
+}
+
+.header__title {
+  justify-self: center;
+  align-self: end;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-weight: normal;
+}
+
+.header__content-title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  padding: 20px 0 24px 0;
+  text-align: center;
+}
+
+.theme-menu {
+  margin-block-end: 25px;
+}
+
+.theme-menu__list{
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  gap: 12px;
+  padding-inline-start: 19px;
+}
+
+.theme-menu__button {
+  margin-left: -1px;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 0;
+  border: none;
+  font-size: 14px;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  position: absolute;
+  margin-inline-start: -20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  margin-block-end: 52px;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000;
+  background-color: var(--background-color);
+}
+
+.card-title {
+  font-size: 18px;
+  font-variation-settings: 'wght' var( --card__title-weight);
+  padding: 5px 10px 4px;
+}
+
+.card__image-label {
+  position: absolute;
+}
+
+.card__img {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.card__content__container {
+  padding: 27px 25px 25px 25px;
+}
+
+.card__text {
+  font-family: 'Inter-Variable';
+  font-size: 18px;
+  font-variation-settings: 'wght' var( --card__text-weight);
+}
+
+.card__text + .card__text {
+  margin-block-start: 27px;
+}
+
+.card__text:last-of-type {
+  margin-block-end: 24px;
+}
+
+.buttons__container {
+  display: flex;
+  justify-content: end;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  height: 38px;
+}
+
+.card__like-button {
+  width: 130px;
+  border: 2px solid #000;
+  font-family: var(--accent-fonts);
+  font-size: 14px;
+}
+
+@media (width <= 375px) {
+  .header, .main {
+    width: 100%;
+  }
+}

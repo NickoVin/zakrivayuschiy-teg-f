@@ -18,6 +18,12 @@
   </head>
   <body class="page">
     <header class="header">
+      <h1 class="header__title">
+        &lt;/html&gt;
+      </h1>
+      <h2 class="header__content-title">
+        Закрывающий тег
+      </h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -44,7 +50,63 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <section class="cards">
+        <ul class="card__list">
+          <li class="card__list-item">
+            <article class="card">
+              <h2 class="card-title">
+                Фритрек и нулевой спринт: Подготовка к работе
+              </h2>
+              <span class="card__image-label">
+                &lt;/html&gt;
+              </span>
+              <img src="./images/car.png" alt="" class="card__img">
+              <div class="card__content__container">
+                <p class="card__text">
+                  Это было самое начало пути. На этом этапе важно было проникнуться
+                  основами и настроиться на учёбу. И, возможно, подумать, как новые
+                  знания могут повлиять на ваше будущее.
+                </p>
+                <p class="card__text">
+                  Место для ваших воспоминаний о начале обучения.
+                </p>
+                <div class="buttons__container">
+                  <button class="card__icon-button button">
+                    <svg
+                      class="like-icon"
+                      width="39"
+                      height="39"
+                      viewBox="0 0 39 36"
+                    >
+                      <use href="svg/Property 1=initial.svg#heart">
+                    </svg>
+                  </button>
+                  <button class="card__like-button button">
+                    <span class="button__text">
+                      Like
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <button class="save-button">
+        <svg
+          class="dialog__save-icon"
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+        >
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <p class="dialog__save-description">
+          Вставьте дискету, чтобы продолжить
+        </p>
+      </button>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

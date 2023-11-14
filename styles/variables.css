@@ -3,8 +3,8 @@
 :root {
     --main-fonts: 'Inter-Variable', sans-serif;
     --accent-fonts: 'PressStart2P-Regular', sans-serif;
-    --card__text-weight: 700;
-    --card__header-weight: 400;
+    --card__text-weight: 400;
+    --card__title-weight: 700;
     --background-color: #fff;
     --accent-color: #000;
     --background-image:
@@ -18,4 +18,5 @@
             transparent 2px 4px
         ),
         linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+        --content-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }

@@ -6,8 +6,8 @@
 */
 
 :root.theme-light {
-    --card__text-weight: 700;
-    --card__header-weight: 400;
+    --card__text-weight: 400;
+    --card__title-weight: 700;
     --background-color: #fff;
     --accent-color: #000;
     --background-image:
@@ -24,8 +24,8 @@
 }
 
 :root.theme-dark {
-    --card__text-weight: 785;
-    --card__header-weight: 465;
+    --card__title-weight: 785;
+    --card__text-weight: 465;
     --background-color: #000;
     --accent-color: #00CC14;
     --background-image:
