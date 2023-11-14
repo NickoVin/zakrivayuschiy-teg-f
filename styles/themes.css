@@ -21,6 +21,7 @@
             transparent 2px 4px
         ),
         linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --image-label-shadow: #fff;
 }
 
 :root.theme-dark {
@@ -39,4 +40,5 @@
             transparent 2px 4px
         ),
         linear-gradient(#007f0c, #004306);
+    --image-label-shadow: #000;
 }
