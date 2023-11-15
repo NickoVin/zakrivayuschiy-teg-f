@@ -22,6 +22,8 @@
         ),
         linear-gradient(#e7e7e7 0.01%, #1a1a1a);
     --image-label-shadow: #fff;
+    --button__text-color: #fff;
+    --heart__fill-color: red;
 }
 
 :root.theme-dark {
@@ -41,4 +43,6 @@
         ),
         linear-gradient(#007f0c, #004306);
     --image-label-shadow: #000;
+    --button__text-color: var(--accent-color);
+    --heart__sparks-color: red;
 }

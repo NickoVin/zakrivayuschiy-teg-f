@@ -41,7 +41,7 @@
   margin-block-end: 100px;
   min-height: 327px;
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-  border: 2px solid #000;
+  border: 2px solid var(--accent-color);
   background-color: var(--background-color);
 }
 
@@ -139,7 +139,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  border: 2px solid #000;
+  border: 2px solid var(--accent-color);
   background-color: var(--background-color);
 }
 
@@ -151,8 +151,8 @@
 
 .image__container {
   position: relative;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card__image-label {
@@ -217,7 +217,7 @@
 
 .card__like-button {
   width: 130px;
-  border: 2px solid #000;
+  border: 2px solid var(--accent-color);
   font-family: var(--accent-fonts);
   font-size: 14px;
 }
@@ -269,6 +269,10 @@
 
 .save-button {
   background-color: var(--background-color);
+}
+
+.sparks {
+  opacity: 0;
 }
 
 @media (width <= 375px) {
