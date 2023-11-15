@@ -102,15 +102,6 @@
   animation: drag 0.5s infinite ease-in-out alternate;
 }
 
-@keyframes drag {
-  from {
-    margin-inline-start: -20px;
-  }
-  to {
-    margin-inline-start: -24px;
-  }
-}
-
 .theme-menu__button::after {
   content: '';
   display: block;
