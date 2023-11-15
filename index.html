@@ -28,7 +28,7 @@
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button type="button" data-theme="dark" class="theme-menu__button button">
               Темно
             </button>
           </li>
@@ -37,13 +37,13 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="theme-menu__button button"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button type="button" data-theme="light" class="theme-menu__button button">
               Светло
             </button>
           </li>
@@ -77,14 +77,14 @@
                   <button class="card__icon-button button">
                     <svg
                       class="like-icon"
-                      width="39"
-                      height="39"
+                      width="37"
+                      height="34"
                       viewBox="0 0 39 36"
                     >
                       <use href="svg/Property 1=initial.svg#heart">
                     </svg>
                   </button>
-                  <button class="card__like-button button">
+                  <button class="card__like-button accent-button button">
                     <span class="button__text">
                       Like
                     </span>
@@ -95,18 +95,16 @@
           </li>
         </ul>
       </section>
-      <button class="save-button">
+      <button class="save-button accent-button">
         <svg
-          class="dialog__save-icon"
+          class="button__save-icon"
           width="28"
           height="28"
           viewBox="0 0 28 28"
         >
           <use href="./svg/floppy.svg#floppy" />
         </svg>
-        <p class="dialog__save-description">
-          Вставьте дискету, чтобы продолжить
-        </p>
+        <span class="button__text">Сохранить на память</span>
       </button>
     </main>
     <script src="./scripts/like.js"></script>

@@ -66,8 +66,18 @@
   display: grid;
   align-items: start;
   justify-content: center;
-  gap: 12px;
+  gap: 9px;
   padding-inline-start: 19px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .theme-menu__button {
@@ -75,14 +85,8 @@
   background-color: transparent;
   text-transform: uppercase;
   padding: 0;
-  border: none;
   font-size: 14px;
   transition: opacity 0.3s ease;
-  cursor: pointer;
-}
-
-.theme-menu__button:focus {
-  outline: none;
 }
 
 .theme-menu__button:disabled {
@@ -204,12 +208,11 @@
 .buttons__container {
   display: flex;
   justify-content: end;
+  gap: 5px;
 }
 
-.button {
-  background-color: transparent;
-  border: none;
-  height: 38px;
+.card__icon-button, .card__like-button {
+  block-size: 38px;
 }
 
 .card__like-button {
@@ -217,6 +220,55 @@
   border: 2px solid #000;
   font-family: var(--accent-fonts);
   font-size: 14px;
+}
+
+.accent-button {
+  transition: box-shadow 0.5s ease-in-out;
+  position: relative;
+}
+
+.accent-button:focus {
+  outline: none;
+  box-shadow: 2px 2px currentColor;
+}
+
+.accent-button::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  background-color: currentColor;
+  transition: transform 0.5s ease-in-out;
+  inset: 0;
+  transform-origin: left;
+}
+
+.accent-button:hover::before {
+  transform: scaleX(1);
+}
+
+.button__text, .button__save-icon {
+  color: var(--button__text-color);
+  mix-blend-mode: difference;
+}
+
+.card__icon-button {
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+  transition: border 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.card__icon-button:focus-visible {
+  border-color: currentColor;
+  border: 2px solid var(--accent-color);
+}
+
+.save-button {
+  background-color: var(--background-color);
 }
 
 @media (width <= 375px) {
