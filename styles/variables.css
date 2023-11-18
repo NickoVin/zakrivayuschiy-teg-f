@@ -21,5 +21,6 @@
     --content-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
     --image-label-shadow: #fff;
     --button__text-color: #fff;
-    --heart__sparks-color: red;
+    --like-icon-main-color: #000;
+    --like-icon-accent-color: red;
 }

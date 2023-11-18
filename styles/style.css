@@ -267,12 +267,67 @@
   border: 2px solid var(--accent-color);
 }
 
+.contour {
+  transition: fill 0.1s linear;
+}
+
+.core,
+.main-body,
+.like-icon.is-liked .contour {
+  transition: fill 0.3s linear;
+}
+
+.core,
+.main-body {
+  fill: transparent;
+}
+
+.core {
+  transition-delay: 0.03s;
+}
+
+.card__icon-button:hover .core,
+.card__icon-button:hover .main-body,
+.card__icon-button:active .main-body {
+  fill: var(--accent-color);
+}
+
+.card__icon-button:hover .main-body,
+.like-icon.is-liked .main-body {
+  transition-delay: 0.05s;
+}
+
+.card__icon-button:active .core,
+.like-icon.is-liked .core,
+.like-icon.is-liked .main-body,
+.card__icon-button:active .main-body,
+.like-icon.is-liked .contour {
+  fill: var(--like-icon-accent-color);
+}
+
+.like-icon.is-liked .contour {
+  transition-delay: 0.06s;
+}
+
+.heart {
+  transform-origin: center;
+}
+
+.like-icon.is-liked .heart {
+  animation: increase-heart 0.3s ease-in 0.1s alternate;
+}
+
 .save-button {
   background-color: var(--background-color);
 }
 
 .sparks {
   opacity: 0;
+}
+
+.like-icon.is-liked .sparks {
+  animation: increase-opacity 0.3s ease-in 0.3s alternate;
+
 }
 
 @media (width <= 375px) {
