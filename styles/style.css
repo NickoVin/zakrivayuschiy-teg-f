@@ -126,14 +126,10 @@
   flex-direction: column;
 }
 
-.cards {
-  margin-block-end: 52px;
-}
-
 .card__list {
   display: flex;
   flex-direction: column;
-  gap: 54px;
+  gap: 50px;
 }
 
 .card {
@@ -146,7 +142,7 @@
 .card-title {
   font-size: 18px;
   font-variation-settings: 'wght' var( --card__title-weight);
-  padding: 5px 10px 4px;
+  padding: 5px 10px 5px;
 }
 
 .image__container {
@@ -161,7 +157,6 @@
   font-size: 14px;
   margin-inline-end: 25px;
   margin-block-start: 25px;
-  text-transform: uppercase;
   text-shadow:
     -1px 0 var(--image-label-shadow),
     0 1px var(--image-label-shadow),
@@ -263,8 +258,7 @@
 }
 
 .card__icon-button:focus-visible {
-  border-color: currentColor;
-  border: 2px solid var(--accent-color);
+  outline: none;
 }
 
 .contour {
@@ -318,7 +312,22 @@
 }
 
 .save-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 20px;
+  inline-size: clamp(19.375rem, 18.715rem + 2.817vw, 21.25rem);
   background-color: var(--background-color);
+  margin: 50px auto 105px auto;
+  border: 2px solid var(--accent-color);
+  font-family: var(--accent-fonts);
+  font-size: 14px;
+}
+
+.button__save-icon {
+  flex-shrink: 0;
+  block-size: 21px;
+  inline-size: 21px;
 }
 
 .sparks {
@@ -327,11 +336,77 @@
 
 .like-icon.is-liked .sparks {
   animation: increase-opacity 0.3s ease-in 0.3s alternate;
+}
 
+.dialog__save {
+  padding: 30px;
+  inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 2px solid var(--accent-color);
+}
+
+.dialog__save[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dialog__save-content-conteiner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog__save-icon {
+  flex-shrink: 0;
+  block-size: 39px;
+  inline-size: 39px;
+}
+
+.dialog__save-description {
+  font-family: var(--accent-fonts);
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.dialog__save-button {
+  width: 100%;
+  border: 2px solid var(--accent-color);
+  font-family: var(--accent-fonts);
+  min-block-size: 38px;
+  text-transform: uppercase;
+}
+
+.dialog__save::backdrop {
+  opacity: 0.75;
+  background: #000;
 }
 
 @media (width <= 375px) {
   .header, .main {
     width: 100%;
+  }
+
+  .theme-menu__list {
+    padding-inline-start: 23px;
+  }
+
+  .card__image-label {
+    margin-inline-end: 11px;
+    margin-block-start: 22px;
+  }
+
+  .save-button {
+    flex-direction: column;
+    gap: 8px;
+    margin: 50px auto 100px auto;
+  }
+
+  .button__save-icon {
+    flex-shrink: 0;
+    block-size: 28px;
+    inline-size: 28px;
   }
 }
