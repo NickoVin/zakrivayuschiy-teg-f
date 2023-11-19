@@ -62,7 +62,7 @@
   margin-block-end: 25px;
 }
 
-.theme-menu__list{
+.theme-menu__list {
   display: grid;
   align-items: start;
   justify-content: center;
