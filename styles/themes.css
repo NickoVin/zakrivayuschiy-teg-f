@@ -48,3 +48,27 @@
     --like-icon-main-color:: var(--accent-color);
     --like-icon-accent-color: red;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --card__title-weight: 785;
+        --card__text-weight: 465;
+        --background-color: #000;
+        --accent-color: #00CC14;
+        --background-image:
+            repeating-linear-gradient(
+                to right,
+                #000 0 2px,
+                transparent 2px 4px
+            ),
+            repeating-linear-gradient(
+                #000 0 2px,
+                transparent 2px 4px
+            ),
+            linear-gradient(#007f0c, #004306);
+        --image-label-shadow: #000;
+        --button__text-color: var(--accent-color);
+        --like-icon-main-color:: var(--accent-color);
+        --like-icon-accent-color: red;
+    }
+}

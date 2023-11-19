@@ -165,6 +165,7 @@
   mix-blend-mode: hard-light;
   inset-block-start: 0;
   inset-inline-end: 0;
+  z-index: 1;
 }
 
 @supports ((text-stroke: 1px var(--image-label-shadow)) or (-webkit-text-stroke: 1px var(--image-label-shadow))) {
@@ -382,6 +383,38 @@
 .dialog__save::backdrop {
   opacity: 0.75;
   background: #000;
+}
+
+.filter-brightness {
+  filter: brightness(250%);
+}
+
+.filter-contrast {
+  filter: contrast(50%);
+}
+
+.filter-grayscale {
+  filter: grayscale(1);
+}
+
+.filter-multiple {
+  filter: grayscale(1) blur(0.7rem);
+}
+
+.filter-saturate {
+  filter: saturate(200%);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(90deg);
+}
+
+.filter-sepia {
+  filter: sepia(80%);
+}
+
+.filter-invert {
+  filter: invert(0.6) sepia(50%);
 }
 
 @media (width <= 375px) {
