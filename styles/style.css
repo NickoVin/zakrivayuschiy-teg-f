@@ -26,7 +26,7 @@
   background-attachment: fixed;
 }
 
-.header, main {
+.header, .main {
   inline-size: var(--content-inline-size);
   margin: 0 auto;
 }
@@ -39,7 +39,6 @@
   text-transform: uppercase;
   margin-block-start: 100px;
   margin-block-end: 100px;
-  min-height: 327px;
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
@@ -50,6 +49,11 @@
   align-self: end;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-weight: normal;
+  cursor: pointer;
+}
+
+.header__title:focus {
+  outline: none;
 }
 
 .header__content-title {
@@ -166,6 +170,7 @@
   inset-block-start: 0;
   inset-inline-end: 0;
   z-index: 1;
+  opacity: 0.5;
 }
 
 @supports ((text-stroke: 1px var(--image-label-shadow)) or (-webkit-text-stroke: 1px var(--image-label-shadow))) {

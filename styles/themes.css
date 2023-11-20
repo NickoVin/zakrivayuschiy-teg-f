@@ -45,7 +45,6 @@
         linear-gradient(#007f0c, #004306);
     --image-label-shadow: #000;
     --button__text-color: var(--accent-color);
-    --like-icon-main-color:: var(--accent-color);
     --like-icon-accent-color: red;
 }
 
@@ -68,7 +67,6 @@
             linear-gradient(#007f0c, #004306);
         --image-label-shadow: #000;
         --button__text-color: var(--accent-color);
-        --like-icon-main-color:: var(--accent-color);
         --like-icon-accent-color: red;
     }
 }
