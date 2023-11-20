@@ -344,18 +344,23 @@
   animation: increase-opacity 0.3s ease-in 0.3s alternate;
 }
 
+.dialog__save[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dialog__save::backdrop {
+  opacity: 0.75;
+  background: #000;
+}
+
 .dialog__save {
   padding: 30px;
   inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
   background-color: var(--background-color);
   color: var(--text-color);
   border: 2px solid var(--accent-color);
-}
-
-.dialog__save[open] {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .dialog__save-content-conteiner {
@@ -383,11 +388,6 @@
   font-family: var(--accent-fonts);
   min-block-size: 38px;
   text-transform: uppercase;
-}
-
-.dialog__save::backdrop {
-  opacity: 0.75;
-  background: #000;
 }
 
 .filter-brightness {
