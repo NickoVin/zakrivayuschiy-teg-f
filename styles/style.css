@@ -267,6 +267,7 @@
 
 .card__icon-button:focus-visible {
   outline: none;
+  border-color: var(--accent-color);
 }
 
 .contour {
